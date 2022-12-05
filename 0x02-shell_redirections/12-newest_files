@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -lt | head -n11| cut -d " " -f 10 | tail -n10
+ls -lt | grep -v "^total" | head | cut -d " " -f 10
